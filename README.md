@@ -59,4 +59,4 @@ A live demo will be available soon. Screenshots:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/hostel-management.git
+[git clone https://github.com/your-username/hostel-management.git](https://github.com/sumitkumar044/StaySmart-Hostel-management-system.git)
