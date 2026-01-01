@@ -1,9 +1,8 @@
 // client/lib/api.js
 "use client";
 
-const BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL ||
-  "http://localhost:5000"; // local backend URL
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+
 
 export const api = async (url, method = "GET", data = null, multipart = false) => {
   const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
