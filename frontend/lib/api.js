@@ -1,8 +1,12 @@
 // client/lib/api.js
 "use client";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL ||
+  "http://localhost:5000"; // local backend URL
+
 export const api = async (url, method = "GET", data = null, multipart = false) => {
-  const token = localStorage.getItem("token");
+  const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
 
   const config = {
     method,
@@ -20,9 +24,8 @@ export const api = async (url, method = "GET", data = null, multipart = false) =
     }
   }
 
-  const res = await fetch(`http://localhost:5000/api${url}`, config);
+  const res = await fetch(`${BASE_URL}/api${url}`, config);
 
-  // yahan pe hi error ko handle karenge
   let json;
   try {
     json = await res.json();
@@ -32,7 +35,6 @@ export const api = async (url, method = "GET", data = null, multipart = false) =
 
   if (!res.ok) {
     const msg = json?.message || `HTTP ${res.status}`;
-    // throw Error with message
     throw new Error(msg);
   }
 
