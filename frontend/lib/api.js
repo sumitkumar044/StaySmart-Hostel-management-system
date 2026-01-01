@@ -20,7 +20,7 @@ export const api = async (url, method = "GET", data = null, multipart = false) =
     }
   }
 
-  const res = await fetch(`http://localhost:5000/api${url}`, config);
+  const res = await fetch(`https://staysmart-hostel-management-system.onrender.com/api${url}`, config);
 
   // yahan pe hi error ko handle karenge
   let json;
