@@ -49,12 +49,12 @@ File Uploads: Handled using Multer for room images.
 
 📸 Screenshots
 Place UI screenshots in a screenshots/ folder and reference them in the README:
-![Home](./screenshots/home.png)
-![Login](./screenshots/login.png)
-![Admin Rooms](./screenshots/rooms.png)
-![Admin Rooms](./screenshots/request.png)
-![Admin Rooms](./screenshots/dashboard.png)
-![Admin Rooms](./screenshots/complain.png)
+![Home](./screenshots/home.png.png)
+![Login](./screenshots/login.png.png)
+![Admin Rooms](./screenshots/rooms.png.png)
+![Admin Rooms](./screenshots/request.png.png)
+![Admin Rooms](./screenshots/dashboard.png.png)
+![Admin Rooms](./screenshots/complain.png.png)
 
 
 ⚙️ Environment Setup
