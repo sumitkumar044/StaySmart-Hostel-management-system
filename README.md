@@ -1,63 +1,66 @@
-🏨 StaySmart -- Hostel Management System 
+🏨 StaySmart — Hostel Management System
 
-A full-stack Hostel Management System built using MERN Stack with Admin & Student roles, room allocation, request system, complaints, and fee management.
+A full-stack Hostel Management System built with the MERN stack, featuring separate Admin and Student roles, room allocation, request handling, complaints, and fee management.
+​
 
-Live demo :- https://stay-smart-hostel-management-system.vercel.app/
-(admin email-kumarsumit48338@gmail.com , password-sumit123)
+Live Demo: https://stay-smart-hostel-management-system.vercel.app/
 
-🚀 Features
+Admin Email: email-kumarsumit48338@gmail.com
+
+Admin Password: sumit123
+​
+
+✨ Features
 👨‍💼 Admin
+Add, update, and view rooms with image upload support and automatic capacity updates.
+​
 
-Add / Update / View Rooms (with image upload)
+View all room allocation requests and accept or reject them in one place.
+​
 
-View all room requests
-
-Accept / Reject student requests
-
-Room capacity auto-update
-
-Manage complaints & fees
+Manage student complaints and track fee payments efficiently.
+​
 
 👨‍🎓 Student
+View all currently available rooms along with details and photos.
+​
 
-View available rooms
+Apply for a room once and track the assigned room in the My Room section.
+​
 
-Apply for a room (only once)
-
-View room details with photo
-
-See accepted room in My Room
-
-Raise complaints
+Raise and manage complaints through an in-app complaint system.
+​
 
 🛠 Tech Stack
+Frontend: Next.js, React, Tailwind CSS.
+​
 
-Frontend: Next.js, React, Tailwind CSS
+Backend: Node.js, Express.js with REST APIs.
+​
 
-Backend: Node.js, Express.js
+Database: MongoDB using Mongoose ODM.
+​
 
-Database: MongoDB (Mongoose)
+Authentication: JWT-based auth with role handling for Admin and Student.
+​
 
-Auth: JWT Authentication
-
-File Upload: Multer
+File Uploads: Handled using Multer for room images.
+​
 
 📸 Screenshots
+Place UI screenshots in a screenshots/ folder and reference them in the README:
+![Home](./screenshots/home.png)
+![Login](./screenshots/login.png)
+![Admin Rooms](./screenshots/rooms.png)
+![Admin Rooms](./screenshots/request.png)
+![Admin Rooms](./screenshots/dashboard.png)
+![Admin Rooms](./screenshots/complain.png)
 
-Add screenshots inside a screenshots/ folder
 
-![Login](screenshots/home.png)
-![Login](screenshots/login.png)
-![Admin Rooms](screenshots/admin-rooms.png)
-![Add Room](screenshots/dashboard.png)
-![Student Rooms](screenshots/complaint.png)
-![Student Rooms](screenshots/fee.png)
-![Room Requests](screenshots/requests.png)
+⚙️ Environment Setup
+Create a .env file in the backend directory:
 
-⚙️ Environment Variables
-
-Create a .env file in backend:
-
+text
 PORT=5000
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_secret_key
@@ -65,30 +68,32 @@ JWT_SECRET=your_secret_key
 EMAIL_USER=your_email
 EMAIL_PASS=your_app_password
 ADMIN_EMAIL=admin_email
-
 ADMIN_MASTER_OTP=1234
-
-
-⚠️ Never push .env file to GitHub
+Never commit or push the .env file to GitHub.
+​
 
 ▶️ Run Locally
 Backend
+bash
 cd server
 npm install
 npm run dev
-
 Frontend
+bash
 cd client
 npm install
 npm run dev
-
 ✅ Project Status
+✔ Fully working end-to-end.
 
-✔ Fully Working
-✔ Admin & Student Flow Complete
-✔ Ready for Deployment
+✔ Complete Admin and Student flows.
+
+✔ Ready for deployment on platforms like Vercel and Render.
+​
 
 👤 Author
-
 Sumit Kumar
-MERN Stack Developer 
+MERN Stack Developer.
+​
+
+Feel free to tell the desired style (thoda casual / zyada professional / interview-focused), then this README can be tweaked even more to match that.
